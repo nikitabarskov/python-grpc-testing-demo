@@ -1,0 +1,10 @@
+# https://buf.build/docs/configuration/v1/buf-yaml
+version: v1
+name: github.com/nikitabarskov/python-grpc-testing-demo
+breaking:
+  use:
+    - PACKAGE
+  ignore_unstable_packages: false
+lint:
+  use:
+    - DEFAULT
