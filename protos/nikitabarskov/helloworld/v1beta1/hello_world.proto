@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package nikitabarskov.helloworld.v1beta1;
+
+message SayHelloRequest {
+  string name = 1;
+}
+
+message SayHelloResponse {
+  string message = 1;
+}
+
+service GreeterService {
+  rpc SayHello(stream SayHelloRequest) returns (stream SayHelloResponse) {}
+}
